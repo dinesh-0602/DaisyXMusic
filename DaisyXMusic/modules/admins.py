@@ -47,7 +47,7 @@ async def update_admin(client, message: Message):
 @authorized_users_only
 async def pause(_, message: Message):
     chat_id = get_chat_id(message.chat)
-        await message.reply_text("▶️ Paused!")
+      await message.reply_text("▶️ Paused!")
       if:
         callsmusic.pause(chat_id)
       else:
