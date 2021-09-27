@@ -17,6 +17,8 @@
 from DaisyXMusic.config import ASSISTANT_NAME, PROJECT_NAME
 
 
+
+
 class Messages:
     START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
     HELP_MSG = [
@@ -41,31 +43,7 @@ class Messages:
 2) Send /userbotjoinchannel in linked group
 3) Now send commands in linked group
 """,
-        f"""
-**Commands**
-
-**=>> Song Playing 🎧**
-
-- /play: Play the requestd song
-- /play [yt url] : Play the given yt url
-- /play [reply yo audio]: Play replied audio
-- /splay: Play song via jio saavn
-- /ytplay: Directly play song via Youtube Music
-
-**=>> Playback ⏯**
-
-- /player: Open Settings menu of player
-- /skip: Skips the current track
-- /pause: Pause track
-- /resume: Resumes the paused track
-- /end: Stops media playback
-- /mute: mute song play
-- /unmute: unmute song play
-- /current: Shows the current Playing track
-- /playlist: Shows playlist
-
-*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.
-""",
+        '\x1f**Commands**\x1f\x1f**=>> Song Playing 🎧**\x1f\x1f- /play: Play the requestd song\x1f- /play [yt url] : Play the given yt url\x1f- /play [reply yo audio]: Play replied audio\x1f- /splay: Play song via jio saavn\x1f- /ytplay: Directly play song via Youtube Music\x1f\x1f**=>> Playback ⏯**\x1f\x1f- /player: Open Settings menu of player\x1f- /skip: Skips the current track\x1f- /pause: Pause track\x1f- /resume: Resumes the paused track\x1f- /end: Stops media playback\x1f- /mute: mute song play\x1f- /unmute: unmute song play\x1f- /current: Shows the current Playing track\x1f- /playlist: Shows playlist\x1f\x1f*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.\x1f',
         f"""
 **=>> Channel Music Play 🛠**
 
@@ -102,26 +80,6 @@ channel is also can be used instead of c ( /cplay = /channelplay )
 - /admincache: Updates admin info of your group. Try if bot isn't recognize admin
 - /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
 """,
-        f"""
-**=>> Song Download 🎸**
-
-- /video [song mame]: Download video song from youtube
-- /song [song name]: Download audio song from youtube
-- /saavn [song name]: Download song from saavn
-- /deezer [song name]: Download song from deezer
-
-**=>> Search Tools 📄**
-
-- /search [song name]: Search youtube for songs
-- /lyrics [song name]: Get song lyrics
-""",
-        f"""
-**=>> Commands for Sudo Users ⚔️**
-
- - /userbotleaveall - remove assistant from all chats
- - /broadcast <reply to message> - globally brodcast replied message to all chats
- - /pmpermit [on/off] - enable/disable pmpermit message
-*Sudo Users can execute any command in any groups
-
-""",
+        '\x1f**=>> Song Download 🎸**\x1f\x1f- /video [song mame]: Download video song from youtube\x1f- /song [song name]: Download audio song from youtube\x1f- /saavn [song name]: Download song from saavn\x1f- /deezer [song name]: Download song from deezer\x1f\x1f**=>> Search Tools 📄**\x1f\x1f- /search [song name]: Search youtube for songs\x1f- /lyrics [song name]: Get song lyrics\x1f',
+        '\x1f**=>> Commands for Sudo Users ⚔️**\x1f\x1f - /userbotleaveall - remove assistant from all chats\x1f - /broadcast <reply to message> - globally brodcast replied message to all chats\x1f - /pmpermit [on/off] - enable/disable pmpermit message\x1f*Sudo Users can execute any command in any groups\x1f\x1f',
     ]
